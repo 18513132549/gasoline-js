@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, List } from "antd-mobile";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <List header='基础用法'>
+        <List.Item>1</List.Item>
+        <List.Item>2</List.Item>
+        <List.Item>3</List.Item>
+      </List>
+      <Button block color='primary' size='large'>
+        Block Button
+      </Button>
     </div>
   );
 }
